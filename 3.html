@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flex 布局</title>
+    <title>段现超</title>
     <style>
       body {
         margin: 0;
@@ -14,7 +14,7 @@
         border: 1px solid black;
       } */
       .yinYing {
-        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px,
           rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%), 0px 1px 3px 0px;
       }
       .flex {
@@ -70,19 +70,17 @@
   <body class="flex">
     <!--侧边栏-->
     <div
-      style="width: 200px; z-index: 2"
+      style="width: 200px; z-index: 1"
       class="ceBian flex column baiSe yinYing">
       <!--头像栏-->
       <div
+        class="flex"
         style="
-          padding: 10px;
           align-items: center;
           justify-content: center;
-          border-bottom: 1px solid #999;
-        "
-        class="flex">
-        <img src="./4(1).jpg" width="40px" height="40px" alt="" />
-        <div style="margin-left: 10px">段现超</div>
+         solid #999;
+        ">
+        <img src="./我的头像.jpg" width="200px" height="300px" alt="头像" />
       </div>
       <!--导航栏-->
       <div class="flex1">
@@ -96,7 +94,21 @@
     <!--主区域-->
     <div class="flex1 flex column">
       <!--头部栏-->
-      <div style="height: 60px; z-index: 2" class="neiRong baiSe yinYing"></div>
+      <div
+        style="background: url(头部背景图片.jpg); height: 300px; z-index: 1"
+        class="neiRong baiSe yinYing">
+        <p
+          style="
+            font-family: 楷体;
+            font-size: 40px;
+            font-style: italic;
+            color: chartreuse;
+            text-align: center;
+            line-height: 2;
+          ">
+          情系水利 自强不息
+        </p>
+      </div>
       <!--内容区-->
       <div class="flex1 flex neiRong" style="overflow: auto">
         <!--左区-->
@@ -104,20 +116,36 @@
           <!--数据区-->
           <div class="flex shuJuQu">
             <!--数据块-->
-            <div
-              style="height: 100px"
-              class="shuJu flex1 baiSe mgr8 yinYing"></div>
-            <div
-              style="height: 100px"
-              class="shuJu flex1 baiSe mgr8 yinYing"></div>
-            <div
-              style="height: 100px"
-              class="shuJu flex1 baiSe mgr8 yinYing"></div>
-            <div style="height: 100px" class="shuJu flex1 baiSe yinying"></div>
+            <div style="height: 50px" class="shuJu flex1 baiSe mgr8 yinYing">
+             <ul class="nav-ul clearfix">
+            <li class="act">
+                <a href="/">简&emsp;介</a>
+            </li>
+            </div>
+            <div style="height: 50px" class="shuJu flex1 baiSe mgr8 yinYing">
+              <ul class="nav-ul clearfix">
+            <li class="act">
+                <a href="/">工作随拍</a>
+            </li>
+            </div>
+            <div style="height: 50px" class="shuJu flex1 baiSe mgr8 yinYing">
+             <ul class="nav-ul clearfix">
+            <li class="act">
+                <a href="/">学习考证</a>
+            </li>
+            </div>
+            <div style="height: 50px" class="shuJu flex1 baiSe yinying">
+              <ul class="nav-ul clearfix">
+            <li class="act">
+                <a href="/">亲子旅游</a>
+            </li>
+            </div>
           </div>
           <!--列表区-->
           <div class="flex column">
             <!--列表项-->
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
+            <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
             <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
             <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
             <div style="height: 160px" class="baiSe mgt8 yinYing"></div>
@@ -126,9 +154,19 @@
         <!--右区-->
         <div style="flex: 1" class="youQu flex column mgr8 mgt8">
           <!--提示区-->
-          <div style="height: 150px" class="baiSe yinYing"></div>
+          <div style="height: 150px" class="baiSe yinYing">
+           <ul class="nav-ul clearfix">
+            <li class="act">
+                <a href="/">数字图书馆</a>
+            </li>
+          </div>
           <!--消息区-->
-          <div style="height: 150px" class="baiSe mgt8 yinYing"></div>
+          <div style="height: 150px" class="baiSe mgt8 yinYing">
+           <ul class="nav-ul clearfix">
+            <li class="act">
+                <a href="/">员工风采</a>
+            </li>
+          </div>
         </div>
       </div>
     </div>
